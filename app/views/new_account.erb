@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Welcome to FaceBug</h1><br>
+
+  <form action= "/create" method= "post">
+  <b><p>First Name<p></b>
+    <input type="text" name="user[firstname]" placeholder= "first name"><br><br>
+  <b><p>Last Name<p></b>
+    <input type="text" name="user[lastname]" placeholder= "last name"><br><br>
+  <b><p>Email<p></b>
+    <input type="text" name="user[email]" placeholder="email"><br><br>
+
+
+  <b><p>Password<p></b>
+    <input type="password" name="user[password]" placeholder="password"><br><br>
+
+  <b><p>Gender<p></b>
+    <select name="user[gender]">
+      <option> - Gender - </option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select><br><br><br><br>
+
+<input type="submit" value="Sign up now!">
+<%= @error if @error %>
+</form>
+
+
+<style>
+  td{
+    padding: 0px 10px 0px 10px;
+  }
+</style>
